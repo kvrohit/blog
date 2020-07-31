@@ -1,0 +1,17 @@
+---
+layout: index.liquid
+title: Rohit's blog
+---
+<h1>rohit's blog</h1>
+
+<div class="blog-list">
+    <ul>
+    {%- for post in collections.post reversed -%}
+        <li><a href="{{ post.url }}"><h3>{{ post.data.title }}</h3><span>{{ post.data.date | date: "%Y-%m-%d" }}</span></a></li>
+    {%- endfor -%}
+    </ul>
+</div>
+
+<footer>
+    &copy; Rohit K Viswanath
+</footer>

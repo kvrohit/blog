@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Space+Mono&display=swap');
+body {
+    font-family: 'Libre Baskerville', serif;
+}
+
+h1, h2, h3, h4, h5, h6, code, pre {
+    font-family: 'Space Mono', monospace !important;
+}
+
+h1 {
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+footer {
+    font-size: 80%;
+}
+
+.container {
+    width: 800px;
+    margin: 0 auto;
+}
+
+.date-meta {
+    font-size: 1rem;
+    font-style: italic;
+    color: #888;
+}
+
+.blog-list ul {
+    list-style-type: none;
+    margin: 0; padding: 0;
+}
+
+.blog-list li {
+    margin-bottom: 1.5rem;
+}
+
+.blog-list a {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.blog-list h3 {
+    margin: 0; padding: 0;
+}
+
+.blog-list span {
+    font-size: 0.8rem;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 50rem) {
+    body {
+        margin: 1rem;
+    }
+    .container {
+        width: auto;
+        margin: auto;
+    }
+}
