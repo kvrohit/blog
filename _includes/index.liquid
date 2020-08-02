@@ -4,13 +4,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ title }}</title>
-    <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-tomorrow.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ '/css/prism-tomorrow.css' | url }}">
     <link rel="stylesheet" href="{{ '/css/vanilla.css' | url }}">
     <link rel="stylesheet" href="{{ '/css/index.css' | url }}">
   </head>
   <body>
-    <div class="container">
-        {{ content }}
-    </div>
+      {{ content }}
   </body>
 </html>
