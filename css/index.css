@@ -22,9 +22,9 @@ footer {
 }
 
 .date-meta {
-    font-size: 1rem;
+    font-size: 70%;
     font-style: italic;
-    color: #888;
+    color: #333;
 }
 
 .blog-list ul {
@@ -50,6 +50,19 @@ footer {
     text-decoration: none;
 }
 
+.pagination {
+    display: flex;
+}
+.pagination svg {
+    width: 16px;
+    height: 16px;
+}
+.pagination a {
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+    font-size: 80%;
+}
 @media screen and (max-width: 50rem) {
     body {
         margin: 1rem;

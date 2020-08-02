@@ -7,7 +7,7 @@ title: Rohit's blog
 <div class="blog-list">
     <ul>
     {%- for post in collections.post reversed -%}
-        <li><a href="{{ post.url }}"><h3>{{ post.data.title }}</h3><span>{{ post.data.date | date: "%Y-%m-%d" }}</span></a></li>
+        <li><a href="{{ post.url }}"><h3>{{ post.data.title }}</h3><span>{{ post.data.date | date: "%b %d, %Y" }}</span></a></li>
     {%- endfor -%}
     </ul>
 </div>

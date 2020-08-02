@@ -3,7 +3,7 @@ title     : New Prototype
 date      : 2007-06-08
 excerpt   : New Prototype
 ---
-![New Prototype](http://3.bp.blogspot.com/_L4ZwP_X8bCo/RmmL7g35EXI/AAAAAAAAAA4/D7he4uW390c/s1600/GepScreen.bmp)
+![New Prototype](/img/GepScreen.jpg)
 
 It has been long... a long time since the blog has been updated. For the past few months our development work has suffered due to the pressure on us from the academic point of view.
 

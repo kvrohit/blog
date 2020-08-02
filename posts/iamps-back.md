@@ -4,7 +4,7 @@ date      : 2006-04-27
 author    : K Sai Krishna
 excerpt   : iAMP's Back!!
 ---
-![iAmp](http://photos1.blogger.com/blogger/901/2661/1600/iAmp.2.gif)
+![iAmp](/img/iAmp.2.gif)
 
 Well, iAMP's back, I've decided to keep it as the default skin.. atleast for now... (by the way, the player does not have two stop buttons, I was too lazy to draw the pause button, so I just used the stop button as a substitute)
 
