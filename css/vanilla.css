@@ -25,8 +25,8 @@ time, mark, audio, video {
 
 /* Variables */
 :root {
-    --desktop-font-size: 1.3rem/1.6;
-    --mobile-font-size: 1.1rem/1.5;
+    --desktop-font-size: 1.2rem/1.6;
+    --mobile-font-size: 1rem/1.5;
     --text-color: #001514;
     --link-color: #6B0504;
     --link-hover-color: #A3320B;
@@ -80,10 +80,6 @@ cite {
 }
 
 kbd,code,samp,pre,var { font-family: monospace; font-weight: bold; }
-code, pre {
-    background: var(--tertiary-color);
-    padding: 0.1rem 0.5rem;
-}
 code pre , pre code { padding: 0; }
 
 /* Elements */
@@ -105,7 +101,7 @@ figure {
 figure img { margin: 0; }
 figure figcaption { font-size: 80%; }
 
-ul, ol { margin: 2rem 0; padding: 0 0 0 4rem; }
+ul, ol { margin: 2rem 0; padding: 0 0 0 2rem; }
 
 dl dd { padding-left: 2rem; }
 

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Space+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=B612+Mono&display=swap");
 body {
     font-family: "Libre Baskerville", serif;
     margin: 0 auto;
@@ -13,7 +13,7 @@ h5,
 h6,
 code,
 pre {
-    font-family: "Space Mono", monospace !important;
+    font-family: "B612 Mono", monospace !important;
 }
 
 h1 {
@@ -31,6 +31,10 @@ footer {
     color: #333;
 }
 
+.blog-list {
+    font-family: "B612 Mono", monospace;
+}
+
 .blog-list ul {
     list-style-type: none;
     margin: 0;
@@ -44,6 +48,7 @@ footer {
 .blog-list a {
     display: flex;
     flex-direction: column-reverse;
+    text-decoration: none;
 }
 
 .blog-list h3 {
@@ -52,8 +57,7 @@ footer {
 }
 
 .blog-list span {
-    font-size: 0.8rem;
-    text-decoration: none;
+    font-size: 75%;
 }
 
 .pagination {
@@ -68,6 +72,7 @@ footer {
     align-items: center;
     margin-right: 1rem;
     font-size: 80%;
+    text-decoration: none;
 }
 .embed-container {
     position: relative;
