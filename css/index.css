@@ -1,6 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=B612+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Overpass+Mono&family=Baloo+2");
 body {
-    font-family: "Libre Baskerville", serif;
+    font-family: "Baloo 2", serif;
     margin: 0 auto;
     width: 800px;
 }
@@ -12,8 +12,9 @@ h4,
 h5,
 h6,
 code,
-pre {
-    font-family: "B612 Mono", monospace !important;
+pre,
+.blog-list {
+    font-family: "Overpass Mono", monospace !important;
 }
 
 h1 {
@@ -29,10 +30,6 @@ footer {
     font-size: 70%;
     font-style: italic;
     color: #333;
-}
-
-.blog-list {
-    font-family: "B612 Mono", monospace;
 }
 
 .blog-list ul {
