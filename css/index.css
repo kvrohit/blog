@@ -5,15 +5,8 @@ body {
     width: 800px;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
 code,
-pre,
-.blog-list {
+pre {
     font-family: "Overpass Mono", monospace !important;
 }
 
