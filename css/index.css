@@ -19,6 +19,14 @@ footer {
     font-size: 80%;
 }
 
+.dark-mode-toggle {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    right: 20px; top: 20px;
+    cursor: pointer;
+}
+
 .date-meta {
     font-size: 70%;
     font-style: italic;
