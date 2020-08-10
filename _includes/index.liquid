@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" color="light">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +7,22 @@
     <link rel="stylesheet" href="{{ '/css/prism-tomorrow.css' | url }}">
     <link rel="stylesheet" href="{{ '/css/vanilla.css' | url }}">
     <link rel="stylesheet" href="{{ '/css/index.css' | url }}">
+    <script>
+        if (window.localStorage.getItem("color") === "dark") {
+            document.documentElement.setAttribute("color", "dark");
+        } else {
+            document.documentElement.setAttribute("color", "light");
+        }
+
+        window.addEventListener("load", function(e) {
+            document.querySelector("#dark-mode-toggle").addEventListener("click", function() {
+                var color = document.documentElement.getAttribute("color") === "light" ? "dark" : "light";
+                document.documentElement.setAttribute("color", color);
+                window.localStorage.setItem("color", color);
+            });
+        });
+
+    </script>
   </head>
   <body>
       {{ content }}
@@ -14,35 +30,4 @@
           <svg viewBox="0 0 20 20" fill="currentColor" class="sun w-6 h-6"><path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"></path></svg>
       </div>
   </body>
-  <script>
-      var toggleDarkMode = function() {
-          if (window.localStorage) {
-              return window.localStorage.getItem('dark') === 'true';
-          }
-          return false;
-      }
-      var setDarkModeToggle = function() {
-          if (window.localStorage) {
-              var body = document.querySelector("body");
-              if (body.classList.contains("dark-mode")) {
-                  window.localStorage.setItem('dark', true);
-              } else {
-                  window.localStorage.setItem('dark', false);
-              }
-          }
-      }
-      window.addEventListener("load", function(we) { 
-          var body = document.querySelector("body");
-          var toggle = document.querySelector("#dark-mode-toggle");
-          
-          if (toggleDarkMode()) {
-              body.classList.toggle("dark-mode");
-          }
-          
-          toggle.addEventListener("click", function(e) {
-              body.classList.toggle("dark-mode");
-              setDarkModeToggle();
-          });
-      });
-  </script>
 </html>

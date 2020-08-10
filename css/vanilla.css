@@ -95,6 +95,9 @@ video {
 :root {
     --desktop-font-size: 1.3rem/1.6;
     --mobile-font-size: 1.1rem/1.5;
+}
+
+:root[color="light"] {
     --text-color: #001514;
     --link-color: #6b0504;
     --link-hover-color: #e2777a;
@@ -104,7 +107,7 @@ video {
     --background-color: #fbfffe;
 }
 
-.dark-mode {
+:root[color="dark"] {
     --background-color: #2d2d2d;
     --text-color: #ccc;
     --link-color: #e2777a;
