@@ -99,8 +99,8 @@ video {
 
 :root[color="light"] {
     --text-color: #001514;
-    --link-color: #6b0504;
-    --link-hover-color: #e2777a;
+    --link-color: #2F4858;
+    --link-hover-color: #001514;
     --primary-color: #0f1928;
     --secondary-color: aliceblue;
     --tertiary-color: whitesmoke;
@@ -109,9 +109,9 @@ video {
 
 :root[color="dark"] {
     --background-color: #2d2d2d;
-    --text-color: #ccc;
-    --link-color: #e2777a;
-    --link-hover-color: #e84545;
+    --text-color: #C5C5C5;
+    --link-color: #ACA9BB;
+    --link-hover-color: #C5C5C5;
 }
 
 /* Typography */

@@ -1,13 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Overpass+Mono&family=Baloo+2");
+@import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro&family=Source+Sans+Pro&family=Source+Code+Pro");
 body {
-    font-family: "Baloo 2", serif;
+    font-family: "Source Serif Pro", serif;
     margin: 0 auto;
     width: 800px;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Source Sans Pro", sans-serif;
+}
+
 code,
 pre {
-    font-family: "Overpass Mono", monospace !important;
+    font-family: "Source Code Pro", monospace !important;
 }
 
 h1 {
@@ -25,12 +29,6 @@ footer {
     position: absolute;
     right: 20px; top: 20px;
     cursor: pointer;
-}
-
-.date-meta {
-    font-size: 70%;
-    font-style: italic;
-    color: #333;
 }
 
 .blog-list ul {
