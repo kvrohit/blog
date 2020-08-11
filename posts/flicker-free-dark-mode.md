@@ -14,7 +14,7 @@ So how do you implement a dark-mode toggle? We'll need three things:
 
 CSS variables give us the flexibility to create styles that can be easily switched. The method I follow here is to define colors in variables that I can simply switch when needed.
 
-Let's start be defining two `root` styles:
+Let's start by defining two `root` styles:
 
 ```css
 :root[color="light"] {
@@ -54,7 +54,7 @@ The question now is where do we stick this attribute? Why, the `documentElement`
 </html>
 ```
 
-Great! Now that we have tackled the markup and the styling its time to move on to the toggle button.
+Great! Now that we have tackled the markup and the styling it is time to move on to the toggle button.
 
 Our button is going to be a `<div id="dark-mode-toggle">` with an `<svg>` icon inside it, styled like a button i.e., the cursor changes to a `pointer` to indicate that this is clickable. Go ahead, try clicking the icon you see at the top right corner of this page.
 
@@ -91,11 +91,11 @@ window.addEventListener("load", function(e) {
 });
 ```
 
-Cool. But is it flicker free? Have a go at it then, click that toggle on the top-right hand corner and visit various pages in this site and see if the page loads keep up with the setting.
+Cool. But is it flicker free? Have a go at it then, click that toggle on the top-right hand corner, visit various pages and see for yourself.
 
 ## Credits
 
-Well, people way smarter that me have already tackled this, I am mearly inspired by them. Hope you are too.
+People way smarter than me have already tackled this, I am mearly inspired by them. Hope you are too.
 
 1. [https://ryanfeigenbaum.com/dark-mode/](https://ryanfeigenbaum.com/dark-mode/)
 2. [https://css-tricks.com/lets-say-you-were-going-to-write-a-blog-post-about-dark-mode/](https://css-tricks.com/lets-say-you-were-going-to-write-a-blog-post-about-dark-mode/)
