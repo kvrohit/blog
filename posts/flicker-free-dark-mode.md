@@ -12,7 +12,7 @@ So how do you implement a dark-mode toggle? We'll need three things:
 
 ## 1. CSS
 
-CSS variables give us the flexibility to create styles that can be easily switched. The method I follow here is to define colors in variables that I can simply switch when needed.
+CSS variables are a great feature to implement styles that can be switched easily.
 
 Let's start by defining two `root` styles:
 
@@ -32,11 +32,11 @@ Let's start by defining two `root` styles:
 }
 ```
 
-The styles are scoped to the `color` arrtibute, what this means is that any element that has this attribute set to either "light" or "dark" will get the appropriate colors.
-
-The question now is where do we stick this attribute? Why, the `documentElement` ofcourse. This simply means the root `<html>` tag.
+The styles are scoped to the `color` attribute which means that any element that has this attribute set to either "light" or "dark" will get the appropriate colors.
 
 ## 2. Markup
+
+The question now is where do we stick this attribute? Why, the `documentElement` of course. For HTML documents the `documentElement` points to the root `<html>` tag.
 
 ```html
 <html color="light">
@@ -56,7 +56,7 @@ The question now is where do we stick this attribute? Why, the `documentElement`
 
 Great! Now that we have tackled the markup and the styling it is time to move on to the toggle button.
 
-Our button is going to be a `<div id="dark-mode-toggle">` with an `<svg>` icon inside it, styled like a button i.e., the cursor changes to a `pointer` to indicate that this is clickable. Go ahead, try clicking the icon you see at the top right corner of this page.
+Our button is going to be a `<div id="dark-mode-toggle">` with an `<svg>` icon inside it, styled like a button i.e., the cursor changes to a `pointer` to indicate that this is clickable. Go ahead, try clicking the icon at the top-right corner of this page.
 
 ## 3. JavaScript
 
