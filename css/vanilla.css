@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro&family=Source+Sans+Pro&family=Source+Code+Pro");
 /* Reset */
 html,
 body,
@@ -95,6 +96,9 @@ video {
 :root {
     --desktop-font-size: 1.3rem/1.6;
     --mobile-font-size: 1.1rem/1.5;
+    --serif: "Source Serif Pro", serif;
+    --sans-serif: "Source Sans Pro", sans-serif;
+    --monospace: "Source Code Pro", monospace;
 }
 
 :root[color="light"] {
@@ -104,11 +108,15 @@ video {
     --primary-color: #0f1928;
     --secondary-color: aliceblue;
     --tertiary-color: whitesmoke;
-    --background-color: #fbfffe;
+    --background-color: #FAFAFA;
+    --nav-background-color: #FFFFFF;
+    --nav-shadow-color: #DDD;
 }
 
 :root[color="dark"] {
     --background-color: #2d2d2d;
+    --nav-background-color: #303030;
+    --nav-shadow-color: #222;
     --text-color: #C5C5C5;
     --link-color: #ACA9BB;
     --link-hover-color: #C5C5C5;
