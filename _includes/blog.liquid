@@ -5,10 +5,29 @@ layout: index.liquid
 {{ content }}
 <p><small>Posted on: {{ date | date: "%b %d, %Y" }}</small></p>
 <p class="pagination">
-<a href="/">
-    <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
-        <path d="M15 19l-7-7 7-7">
-        </path>
-    </svg>Back</a>
-    <a href="#"><svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor"><path d="M5 15l7-7 7 7"></path></svg>Top</a>
+    <a href="/">
+        <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+            <path d="M15 19l-7-7 7-7">
+            </path>
+        </svg>
+        Back
+    </a>
+    <a href="#" id="scroll-to-top">
+        <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+            <path d="M5 15l7-7 7 7"></path>
+        </svg>
+        Top
+    </a>
 </p>
+<script>
+    window.addEventListener("load", function() {
+        document.querySelector("#scroll-to-top").addEventListener("click", function(e) {
+            window.scroll({
+                top: 0,
+                left: 0,
+                behavior: "smooth"
+            });
+            e.preventDefault();
+        });
+    });
+</script>
